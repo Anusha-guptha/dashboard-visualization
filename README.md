@@ -40,43 +40,29 @@ First, clone the repository to your local machine:
     git clone https://github.com/Anusha-guptha/dashboard-visualization.git
     cd dashboard-visualization
     ```
-
-### 2. Navigate into the project directory
-    ```bash
-    cd your-repository
-    ```
-
-### 3. Ensure Docker and Docker Compose are installed
+    
+### 2. Ensure Docker and Docker Compose are installed
     - [Docker installation guide](https://docs.docker.com/get-docker/)
     - [Docker Compose installation guide](https://docs.docker.com/compose/install/)
+    
+### 3. Build and Start the Docker containers
+Run the following commands to build and start the application:
 
-### 4. Build the Docker images
     ```bash
     docker-compose build
-    ```
-
-    This will download the required images and set up Python, Node.js, and other dependencies.
-
-### 5. Start the application
-
-    Once the images are built, you can start the application with the following command:
-
-    ```bash
     docker-compose up
     ```
 
-   This will start the services defined in the `docker-compose.yml` file, including:
+   This will:
+    - Build Docker images for both the frontend and backend.
+    - Start the services defined in the `docker-compose.yml` file.
 
-    - **Frontend (React)**: Accessible at `http://localhost:3000`
-    - **Backend (Django)**: Accessible at `http://localhost:8000`
-    - **Database**: Django's built-in SQLite database (configured within the Django project)
-
-### 6. Accessing the application:
+### 5. Accessing the application:
 
     - **Frontend (React)**: [http://localhost:3000](http://localhost:3000)
     - **Backend (Django)**: [http://localhost:8000](http://localhost:8000)
 
-### 5. Stop the Docker containers:
+### 6. Stop the Docker containers:
 
     To stop the running containers, you can run:
 
